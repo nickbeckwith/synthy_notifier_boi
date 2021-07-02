@@ -6,8 +6,8 @@ def main():
     parser = argparse.ArgumentParser(
                         description='Notify discord webhook with a '
                                     'meme from r/fpga')
-    parser.add_argument('status', type=int, metavar='$!',
-                        help='Well behaved status code ($!)')
+    parser.add_argument('status', type=int, metavar='$?',
+                        help='Well behaved status code ($?)')
     parser.add_argument('-u', '--url', type=str, required=True,
                         help='Discord webhook URL')
     parser.add_argument('-m', '--message', type=str, required=True,
